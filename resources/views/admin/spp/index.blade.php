@@ -91,7 +91,7 @@
             @csrf
             @method('POST')
             <div class="mb-3">
-              <label class="form-label">Nama SPP</label>
+              <label class="form-label">Tahun</label>
               <input type="number" 
                 class="form-control @error('tahun')
               is-invalid

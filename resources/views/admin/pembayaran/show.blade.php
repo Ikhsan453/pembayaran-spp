@@ -4,12 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-          <div class="mt-1 mb-1">
-            <a href="{{ route('pembayaran.create')}}" class="btn btn-danger btn-sm">Export</a>
-          </div>
             <div class="card">
                 <div class="card-header">
-                  <marquee behavior="left" direction="left">Rekapitulasi Pembayaran SPP</marquee>
+                  <marquee behavior="left" direction="left">Rekapitulasi Pembayaran SPP Per Anak</marquee>
                 </div>
 
                 <div class="card-body">

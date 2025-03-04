@@ -20,5 +20,9 @@ class Siswa extends Model
         return $this->belongsTo(Spp::class);
     }
     
+    public function pembayaran()
+    {
+        return $this->hasMany(Pembayaran::class);
+    }
 
 }

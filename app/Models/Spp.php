@@ -13,5 +13,12 @@ class Spp extends Model
     {
         return $this->hasMany(Siswa::class);
     }
+
+    public function pembayaran()
+    {
+        return $this->hasMany(Pembayaran::class);
+    }
+
+    
 }
     

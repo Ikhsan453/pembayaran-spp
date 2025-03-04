@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('siswa_id')->constrained('siswas');
             $table->date('tanggal_bayar');
-            $table->string('bulan_bayar');
+            $table->string('bulan');
             $table->foreignId('spp_id')->constrained('spps');
             $table->string('nama_pengimput');
             $table->timestamps();

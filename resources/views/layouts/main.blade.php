@@ -32,7 +32,7 @@
                     <ul class="navbar-nav me-auto">
                         @if(Auth::user()->role == 1)
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="{{ url('/home') }}">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{{ route('siswa.index') }}">Siswa</a>
@@ -48,15 +48,22 @@
                             </li>
                         @elseif(Auth::user()->role == 2)
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Siswa</a>
-                            </li>    
+                                <a class="nav-link active" aria-current="page" href="{{ route('siswa.index') }}">Siswa</a>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Pembayaran Spp</a>
+                                <a class="nav-link active" aria-current="page" href="{{ route('spp.index') }}">Spp</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('pembayaran.index') }}">Pembayaran Spp</a>
                             </li>
                         @elseif(Auth::user()->role == 3)
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Pembayaran Spp</a>
+                                <a class="nav-link active" aria-current="page" href="{{ route('siswa.index') }}">Siswa</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('pembayaran.index') }}">Pembayaran Spp</a>
+                            </li>
+
                         @endif
                     </ul>
 
